@@ -17,7 +17,7 @@ public class SecurityConfig {
         return http
                 .authorizeHttpRequests(
                         authorizeRequests -> authorizeRequests
-                                .anyRequest().permitAll()
+                                .anyRequest().authenticated()
                         )
                 .oauth2ResourceServer(
                         oauth2ResourceServer -> oauth2ResourceServer

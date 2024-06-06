@@ -21,6 +21,7 @@ public class KafkaConsumerConfig {
     public ConsumerFactory<String, String> consumerFactory() {
         Map<String, Object> props = new HashMap<>();
         Deserializer<String> deserializer = new StringDeserializer();
+        //TODO: Add deserializer for AnalysisMessage
 
         props.put(
                 ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,
