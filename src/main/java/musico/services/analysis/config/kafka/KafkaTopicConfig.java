@@ -24,6 +24,6 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic registration() {
-        return new NewTopic("audio-analysis", 1, (short) 1);
+        return new NewTopic("audio_analysis", 1, (short) 1);
     }
 }

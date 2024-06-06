@@ -6,6 +6,7 @@ import lombok.ToString;
 @Data
 @ToString
 public class AnalysisMessage {
+    private String user;
     private Integer beats;
     private Float danceability;
 }
